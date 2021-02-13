@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Problem 3</title>
+    <style>
+      *{
+        font-family: 'Ubuntu', sans-serif;
+      }  
+      img {
+        border: 1px solid lightgrey;
+      }
+      .select{
+          display: inline-block;
+      }
+      .info{
+          display: inline-block;
+          margin-left: 20px;
+      }
+      .content{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 25px;
+          margin-left: 200px;
+          margin-right: 300px;
+      }
+      .buyBtn{
+          background-color: #007bff;
+          color: white;
+          padding: 7px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .cartBtn{
+          background-color: lightgrey;
+          color: black;
+          padding: 7px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+      }
+      .quantity{
+          margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 style="text-align: center">Product Page</h3>
+
+    <div class="container">
+      <div class="content">
+        <img height="400" src="tshirt.png" />
+
+        <div class="info">
+          <p style="font-weight: bold">Green Cotton Tshirt</p>
+
+          <p>Shirts</p>
+
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+
+          <div class="price">
+            <p>Rs.400 &nbsp;<span><small><del>Rs.800</del></small></span> &nbsp; <span style="color: #388e3c;">50% Off</span> </p>
+          </div>
+
+          <div class="para">
+            <small class="para" style="font-weight: 500">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+                officia culpa at veritatis hic minus ratione molestias, quos nemo
+                aperiam et eligendi repellendus sunt nisi architecto rerum ipsam
+                incidunt totam!
+              </small>
+          </div>
+
+          <div class="color">
+            <small style="font-weight: 800; font-size: medium">Color:</small>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small style="font-size: medium">Green</small>
+          </div>
+
+          <div class="stock">
+            <small style="font-weight: 800; font-size: medium"
+              >Availability:</small
+            >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <small style="font-size: medium">3 in stock</small>
+          </div>
+
+          <div class="size">
+            <small style="font-weight: 800; font-size: medium"
+              >Select size:</small
+            >
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="select">
+                <input type="radio" value="Small" name="select" id="select" />
+                <label>Small</label><br />
+            </div>
+            <div class="select">
+                <input
+                type="radio"
+                value="Medium"
+                name="select"
+                id="select"
+                checked
+              />
+              <label>Medium</label><br />
+            </div>  
+            <div class="select">
+                <input type="radio" value="Large" name="select" id="select" />
+                <label>Large</label><br />
+            </div>
+            <div class="quantity">
+                <small style="font-weight: 800; font-size: medium">Quantity:</small>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="quantity" id="quantity">
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            </div>
+            <a class="buyBtn">Buy Now</a>
+            <a class="cartBtn">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
